@@ -9,7 +9,11 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
+<script type="text/javascript" src="assets/javascript/PetMatch.js"></script>
+    <script type="text/javascript" src="https://www.petfinder.com/common/javascript/widgets/quick.js"></script>
 <body>
 <div class="col-lg-12">
  
@@ -63,7 +67,30 @@
 
 
 </center>
- 
+ <div class="container">
+    <h1>Pet Search</h1>
+
+<form id="pet-form">
+      <label for="pet-input">Dog breed</label>
+      <input type="text" id="pet-input"><br>
+       <label for="pet-input">Location</label>
+      <input type="text" id="location" placeholder="ZIP code or city and state"><br>
+      <!-- This button will trigger our AJAX call -->
+      <input id="find-pet" type="submit" value="pet Search">
+    </form>
+
+    <div id="pet-view">
+      <p>name:<span id="name"></span></p>
+      <p>description:<span id="description"></span></p>
+      <p>sex:<span id="sex"></span></p>
+      <p>size:<span id="size"></span></p>
+      <div id="photo"></div>
+      <p>shelterID:<span id="shelter"></span></p>
+      <p>contact:<span id="contact"></span></p>
+    </div>
+
+    
+    
   
 <style>
 .Search{
@@ -104,7 +131,6 @@ body{
 
 </style>
     
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+
 </body>
 </html>
