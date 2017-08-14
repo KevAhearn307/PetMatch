@@ -81,3 +81,87 @@ function resetCalc(resetButton) {
 
 
 
+
+/* $(document).ready(function(){
+
+      var breed = "";
+      // xhr.setRequestHeader( 'Api-User-Agent', 'Example/1.0' );
+    
+
+
+    $("button").click(function(){
+
+      var breed = $("#search").val().trim();
+      var name = $("#name").val().trim()
+      var zipCode = $("#code").val().trim()
+
+      console.log(breed)
+      console.log(name)
+      console.log(zipCode)
+
+
+      var queryURL = "https://en.wikipedia.org/w/api.php?action=opensearch&search=" + breed + "&format=json&callback=?"
+
+      var imageURL = "https://dog.ceo/api/breed/" + breed + "/images"
+      
+      $("#image").empty();
+
+      $.ajax({
+        url: queryURL,
+        method: "GET",
+        contentType: "applocation/json; charset=utf-8",
+        async: false,
+        dataType: "json",
+        success: function(data){
+          $("#facts").html(data[2][0]);
+          // $("#output").html(data[3][0]);
+
+          for(var i=0; i<data[2].length; i++){
+            $("#link").html("<div>" + "Find out about the " + breed + "s lifespan and size with this link " + "<a href =" + data[3][0] + ">"+ data[3][0] +"</a></div>")
+            console.log(data);
+          }
+        },
+        
+      });
+        
+      $.ajax({
+        url: imageURL,
+        method: "GET"
+      })
+
+      .done(function(response){
+        console.log(response.message[1]);
+
+        var dog = response.message[2];
+
+        $("#image").append("<img src=" + dog + "></img>");
+
+      })
+
+
+      // Initialize Firebase
+       var config = {
+          apiKey: "AIzaSyDuBFYzfIw_9JwSE3U0_dkWvbUt2OhV72Q",
+          authDomain: "petmatch-b3da8.firebaseapp.com",
+          databaseURL: "https://petmatch-b3da8.firebaseio.com",
+        projectId: "petmatch-b3da8",
+          storageBucket: "petmatch-b3da8.appspot.com",
+          messagingSenderId: "1014252033957"
+        };
+  
+        firebase.initializeApp(config);
+
+        var database = firebase.database();
+
+        var user = {
+          Customer_Name: name,
+          Breed: breed,
+          Zip_Code: zipCode
+        }
+        database.ref().push(user);
+    });
+
+      
+  });
+*/
+    
