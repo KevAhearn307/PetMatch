@@ -82,7 +82,6 @@ function resetCalc(resetButton) {
 
 
 
-
 /* $(document).ready(function(){
 
       var breed = "";
@@ -166,7 +165,3 @@ function resetCalc(resetButton) {
   });
 */
     
-
-
-
-
