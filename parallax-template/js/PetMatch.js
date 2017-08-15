@@ -1,7 +1,4 @@
-
-
-
- $(document).ready(function(){
+$(document).ready(function(){
 
     event.preventDefault();
 
@@ -99,7 +96,7 @@
        
       
       $("#image").empty();
-
+     
       $.ajax({
         url: queryURL,
         method: "GET",
@@ -139,24 +136,20 @@
     success:(function(data){
     
 
-<<<<<<< HEAD
- 
-      $("#pet-view").prepend("<div>" + "<h2>" + "Here is your " + breed + "</h2></div>")
+      $("#hereIs").html("<div>" + "<h2>" + "About " + breed + "</h2></div>");
+      $("#here").html("<div>" + "<h2>" + "Here is your " + breed + "</h2></div>");
     
-=======
-      
->>>>>>> 812a9c2a4d65b6fe2d81ace63047475793386482
       $("#photo").html("<img src="+data.petfinder.pets.pet.media.photos.photo[3].$t+"></img>");
     
       
-      $("#name").text("Name: " + data.petfinder.pets.pet.name.$t).css('font-size', '18px').css("font-family", 'Source Sans Pro', 'sans-serif');
-      $("#description").text("Description: " + data.petfinder.pets.pet.description.$t).css('font-size', '20px').css("font-family", 'Source Sans Pro', 'sans-serif');
-      $("#sex").text("Sex: " + data.petfinder.pets.pet.sex.$t).css('font-size', '18px').css("font-family", 'Source Sans Pro', 'sans-serif');
-      $("#size").text("Size: " + data.petfinder.pets.pet.size.$t).css('font-size', '18px').css("font-family", 'Source Sans Pro', 'sans-serif');
-      $("#age").text("Age: " + data.petfinder.pets.pet.age.$t).css('font-size', '18px').css("font-family", 'Source Sans Pro', 'sans-serif');
+      $("#name").text("Name: " + data.petfinder.pets.pet.name.$t);
+      $("#description").text("Description: " + data.petfinder.pets.pet.description.$t);
+      $("#sex").text("Sex: " + data.petfinder.pets.pet.sex.$t);
+      $("#size").text("Size: " + data.petfinder.pets.pet.size.$t);
+      $("#age").text("Age: " + data.petfinder.pets.pet.age.$t);
       
 
-      $("#shelter").text("Shelter: " + data.petfinder.pets.pet.shelterId.$t).css('font-size', '18px').css("font-family", 'Source Sans Pro', 'sans-serif');
+      $("#shelter").text("Shelter: " + data.petfinder.pets.pet.shelterId.$t);
       $("#contact1").text("Contact: " + data.petfinder.pets.pet.contact.phone.$t);
       $("#contact2").html("<a href =" + data.petfinder.pets.pet.contact.email.$t + ">" + data.petfinder.pets.pet.contact.email.$t + "</a>" );
 
@@ -213,11 +206,9 @@
   
 
     
-  
+  getName ();
 
     });
- getName ();
+ 
       
   });
-
-    
