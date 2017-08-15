@@ -93,3 +93,40 @@ footer.page-footer {
 #print{
   float: right;
 }
+#name{
+  font-size: 18px;
+  font-family: Source Sans Pro, sans-serif;
+}
+#description{
+  font-size: 18px;
+  font-family: Source Sans Pro, sans-serif;
+}
+#sex{
+  font-size: 18px;
+}
+#size{
+  font-size: 18px;
+}
+#age{
+  font-size: 18px;
+}
+#shelter{
+  font-size: 18px;
+  font-family: Source Sans Pro, sans-serif;
+}
+#contact1{
+  font-size: 18px;
+  font-family: Source Sans Pro, sans-serif;
+}
+#contact2{
+  font-size: 18px;
+  font-family: Source Sans Pro, sans-serif;
+}
+#facts{
+  font-size: 16px;
+  font-family: Source Sans Pro, sans-serif;
+}
+#link{
+  font-size: 16px;
+  font-family: Source Sans Pro, sans-serif;
+}
