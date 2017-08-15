@@ -10,10 +10,12 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 
 
 </head>
@@ -33,7 +35,7 @@
 
     </div>
   </nav>
-        \
+        
 
 
   <div id="index-banner" class="parallax-container valign-wrapper">
@@ -51,8 +53,12 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="Dog.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="Dog.jpg" alt="Unsplashed background img 1"> </div>
+
   </div>
+  <div class = "marquee">Here</div>
+
+
 
 
 
@@ -70,9 +76,15 @@
  <div class="row">
            <div class="col-sm-2"></div>
           <div class="col-sm-8">
-            <iframe name='proprofs' id='proprofs' width='500' height='600' frameborder=0 marginwidth=0 marginheight=0 src='https://www.proprofs.com/quiz-school/story.php?title=which-dog-is-right-me_2&id=15070&ew=480'></iframe>                                              <div style='font-size:10px; font-family:Arial, Helvetica, sans-serif; color:#000;text-align:left;'><a href='https://www.proprofs.com/quiz-school/story.php?title=which-dog-is-right-me_2' target='_blank' title='Which Dog is right for Me? - ProProfs'>Which Dog is right for Me? - ProProfs</a></div>
-          </div>
-          <div class="col-sm-2"></div>
+          <h3 id="quiz"></h3>
+          <h4 id="options"></h4>
+
+
+              
+            </div>
+          
+           <div id="dogs"></div>
+          <div class="col-sm-2"  id="test"></div>
 </div>
 
 
@@ -105,7 +117,7 @@
         <input class="form-control" type="number" name="zipCode" id="code"> <b>Zip Code</b>
       </form>
 
-      <button style="font-size:24px">Submit <i class="fa fa-paw"></i></button>
+      <button class="find" style="font-size:24px">Submit <i class="fa fa-paw"></i></button>
     </div>
     <br><br>
      <div class="row">
@@ -136,7 +148,7 @@
 
 <!-- <div class="dfc-container">
       <form id="dogfoodcalc" name="dogfoodcalc" action="#" onsubmit="doCalculation(this); return false;" role="form">
-        <div class="row text-center">
+im        <div class="row text-center">
           <h3>Dog Food Calculator</h3>
         </div>
         <div class="row">
