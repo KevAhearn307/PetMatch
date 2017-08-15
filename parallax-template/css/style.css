@@ -72,3 +72,24 @@ h1{
 footer.page-footer {
   margin: 0;
 }
+#vistor{
+  font-size: 20px;
+}
+#search{
+  font-size: 20px;
+}
+#code{
+  font-size: 20px;
+}
+#description{
+  line-height: 180%;
+}
+#contact1{
+  font-size: 16px;
+}
+#contact2{
+  font-size: 16px;
+}
+#print{
+  float: right;
+}
