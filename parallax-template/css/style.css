@@ -9,11 +9,19 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
+ 
 }
 
 p {
   line-height: 2rem;
 }
+
+h1{
+   color: black;
+   }
+.Header{
+      color: blue;
+          }
 
 .button-collapse {
   color: #26a69a;
@@ -50,6 +58,15 @@ p {
 }
 .icon-block .material-icons {
   font-size: inherit;
+}
+
+#table{
+  color: black;
+}
+
+#cost{
+  color: black;
+  align-content: center;
 }
 
 footer.page-footer {
