@@ -150,3 +150,6 @@ footer.page-footer {
   font-size: 18px;
   font-family: Source Sans Pro, sans-serif;
 }
+.option{
+  animation-iteration-count: infinite;
+}
