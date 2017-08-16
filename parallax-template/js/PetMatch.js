@@ -7,14 +7,20 @@ $(document).ready(function(){
     $("#cost").on("click", function(){
           $("#table").toggle()
     });
+  $("#quiz").hide()
+      $("#options").hide()
 
+   $("#quizButton").on("click", function(){
+          $("#quiz").show()
+          $("#options").show()
+    });
     var quiz = {
       question: "What size dog do you want?",
       answers: ["Small", "Medium", "Large"],
     };
 
      var small = [ "Chihuahua", "Yorkie","Pug", "Beagle"];
- var medium = ["Pit-Bull",  "Boxer","Poodle","Golden-Retriever"];
+ var medium = ["Basset-Hound",  "Schnauzer","Poodle","Golden-Retriever"];
  var large = ["German-Shepherd", "Great Dane", "Husky", "Dalmation"];
 
     
