@@ -130,3 +130,24 @@ footer.page-footer {
   font-size: 16px;
   font-family: Source Sans Pro, sans-serif;
 }
+#small, #medium, #large, #work{
+  background-color: white;
+ /* color: #D32F2F ;*/
+  border: none;
+  border-radius: 12px;
+
+}
+.dfc-container{
+  margin: 40px;
+  padding: 20px;
+  background-color: white;
+  font-size: 18px;
+  font-family: Source Sans Pro, sans-serif;
+}
+.inputcalories{
+  margin: 40px;
+  padding: 20px;
+  background-color: white;
+  font-size: 18px;
+  font-family: Source Sans Pro, sans-serif;
+}

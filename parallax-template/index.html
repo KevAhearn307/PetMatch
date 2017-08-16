@@ -15,14 +15,14 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+<link rel="stylesheet" type="text/css" media="all" href="css/animate.css">
 
 
 </head>
 
 
 <body>
-
+  
 
   <nav>
     <div  class="nav-wrapper">
@@ -74,18 +74,21 @@
 <center><h1><b><i class="fa fa-paw" style="font-size:36px"></i>Pet Match</b></h1></center>
     </div>
  <div class="row">
-           <div class="col-sm-2"></div>
-          <div class="col-sm-8">
+           <div class="col-sm-4"></div>
+          <div class="col-sm-5">
+
+<!-- <<<<<<< HEAD -->
+
+          <button id="quizButton" style="font-size:24px">Take Quiz! <i class="fa fa-paw"></i></button>
           <h3 id="quiz"></h3>
           <h4 id="options"></h4>
-
-
-              
-            </div>
           
-           <div id="dogs"></div>
-          <div class="col-sm-2"  id="test"></div>
-</div>
+
+             
+           </div>
+          
+          <div id="dogs"></div>
+          <div class="col-sm-3 id="test"></div>
 
 
 
@@ -256,6 +259,8 @@ im        <div class="row text-center">
 <tr  class="success"><td>TOTAL  </td><td> $766-$10,350 </td><td>$526-$9,352 </td></tr>
 
 </table>
+
+
     </div>
  <div class="col-sm-2"></div>
 
@@ -265,9 +270,54 @@ im        <div class="row text-center">
 
     <div class="parallax"><img src="Dog-ii.jpg" alt="Unsplashed background img 3"></div>
   </div>
-
-
-   
+<div class="col-sm-11">
+  <div class="dfc-container">
+  <form id="dogfoodcalc" name="dogfoodcalc" action="#" onsubmit="doCalculation(this); return false;" role="form">
+  <div class="row text-center">
+  <h1 class="light black-text text-darken-10"><b>Dog Food Calculator</b></h1>
+  </div>
+  <div class="row">
+  <div class="step col-sm-4 form-group" id="step_1">
+            <h5 class="light black-text text-darken-10"><b>Ideal weight (pounds)</b></h5>
+            <label for="weight" class="control-label"></label>
+            <input type="text" name="weight" size="6" minlength="1" class="form-control" style="font-size:24px">
+            <input type="hidden" name="measure" value="lb" checked="checked" class="form-control">
+            </div>
+            <div class="step col-sm-4 form-group" id="step_2">
+            <h5 class="light black-text text-darken-10"><b>Activity level</b></h5>
+            <label for="activity_level" class="control-label"></label>
+            <select name="activity_level" class="form-control">
+              <option value="" selected="selected">Activity level...</option>
+              <option value="110">Typical</option><option value="125">Active</option>
+              <option value="70">Overweight</option><option value="175">Highly Active</option>
+              <option value="90">Senior, neutered, inactive</option>
+              <option value="130,150">Working Dog (light duty)</option>
+              <option value="150,175">Working Dog (moderate duty) </option>
+              <option value="175,250">Working Dog (heavy duty)</option></select>
+           </div>  
+           <div class="step col-sm-4 form-group" id="step_3">
+            <h6 class="light black-text text-darken-10"><b>Food's calories per serving (kcal/cup)</b></h6>
+            <label for="calories" class="control-label"></label>
+            <input type="text" name="calories" size="6" minlength="2" class="form-control" style="font-size:24px">
+            <input type="hidden" name="unit" value="cup" checked="checked" class="form-control">
+           </div>
+           </div>
+           <div class="row">       
+            <div class="col-md-12 text-center">
+              <button class="btn btn-primary" type="submit" id="calcsubmit" onclick="doCalculation();" value="Calculate">CALCULATE</button>
+              <button id="clear-btn" class="btn btn-default" onclick="resetCalc(true);" value="Reset" type="reset">RESET</button>
+              <div class="clear"></div>
+            </div>
+            <div class="col-md-12 text-center" id="response-container">
+              <div id="response" class="response">
+              
+</div>
+              
+</div>
+              
+</div>
+</div>
+ </div>  
 
   <footer class="page-footer teal">
     <div class="container">
@@ -289,7 +339,7 @@ im        <div class="row text-center">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 
-
+  <script type="text/javascript" src="js/PetMatch-i.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
